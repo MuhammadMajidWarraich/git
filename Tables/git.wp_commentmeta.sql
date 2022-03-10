@@ -1,9 +1,9 @@
 CREATE TABLE [git].[wp_commentmeta]
 (
 [meta_id] [numeric] (20, 0) NOT NULL IDENTITY(1, 1),
-[comment_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wp_commen__comme__308E3499] DEFAULT ((0)),
-[meta_key] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_commen__meta___318258D2] DEFAULT (NULL),
-[meta_value] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_commen__meta___32767D0B] DEFAULT (NULL)
+[comment_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wp_commen__comme__153B1FDF] DEFAULT ((0)),
+[meta_key] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_commen__meta___162F4418] DEFAULT (NULL),
+[meta_value] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_commen__meta___17236851] DEFAULT (NULL)
 ) ON [PRIMARY]
 GO
 ALTER TABLE [git].[wp_commentmeta] ADD CONSTRAINT [PK_wp_commentmeta_meta_id] PRIMARY KEY CLUSTERED ([meta_id]) ON [PRIMARY]

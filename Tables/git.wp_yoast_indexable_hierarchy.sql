@@ -2,8 +2,8 @@ CREATE TABLE [git].[wp_yoast_indexable_hierarchy]
 (
 [indexable_id] [bigint] NOT NULL,
 [ancestor_id] [bigint] NOT NULL,
-[depth] [bigint] NULL CONSTRAINT [DF__wp_yoast___depth__24E777C3] DEFAULT (NULL),
-[blog_id] [bigint] NOT NULL CONSTRAINT [DF__wp_yoast___blog___25DB9BFC] DEFAULT ((1))
+[depth] [bigint] NULL CONSTRAINT [DF__wp_yoast___depth__09946309] DEFAULT (NULL),
+[blog_id] [bigint] NOT NULL CONSTRAINT [DF__wp_yoast___blog___0A888742] DEFAULT ((1))
 ) ON [PRIMARY]
 GO
 ALTER TABLE [git].[wp_yoast_indexable_hierarchy] ADD CONSTRAINT [PK_wp_yoast_indexable_hierarchy_indexable_id] PRIMARY KEY CLUSTERED ([indexable_id], [ancestor_id]) ON [PRIMARY]

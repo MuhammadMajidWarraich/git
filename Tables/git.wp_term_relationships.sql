@@ -1,8 +1,8 @@
 CREATE TABLE [git].[wp_term_relationships]
 (
-[object_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wp_term_r__objec__5D60DB10] DEFAULT ((0)),
-[term_taxonomy_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wp_term_r__term___5E54FF49] DEFAULT ((0)),
-[term_order] [int] NOT NULL CONSTRAINT [DF__wp_term_r__term___5F492382] DEFAULT ((0))
+[object_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wp_term_r__objec__420DC656] DEFAULT ((0)),
+[term_taxonomy_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wp_term_r__term___4301EA8F] DEFAULT ((0)),
+[term_order] [int] NOT NULL CONSTRAINT [DF__wp_term_r__term___43F60EC8] DEFAULT ((0))
 ) ON [PRIMARY]
 GO
 ALTER TABLE [git].[wp_term_relationships] ADD CONSTRAINT [PK_wp_term_relationships_object_id] PRIMARY KEY CLUSTERED ([object_id], [term_taxonomy_id]) ON [PRIMARY]
