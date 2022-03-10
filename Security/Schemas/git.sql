@@ -1,0 +1,3 @@
+CREATE SCHEMA [git]
+AUTHORIZATION [dbo]
+GO
