@@ -1,12 +1,12 @@
 CREATE TABLE [git].[wp_yoast_primary_term]
 (
 [id] [bigint] NOT NULL IDENTITY(1, 1),
-[post_id] [bigint] NULL CONSTRAINT [DF__wp_yoast___post___0C70CFB4] DEFAULT (NULL),
-[term_id] [bigint] NULL CONSTRAINT [DF__wp_yoast___term___0D64F3ED] DEFAULT (NULL),
+[post_id] [bigint] NULL CONSTRAINT [DF__wp_yoast___post___24D2692A] DEFAULT (NULL),
+[term_id] [bigint] NULL CONSTRAINT [DF__wp_yoast___term___25C68D63] DEFAULT (NULL),
 [taxonomy] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-[created_at] [datetime2] (0) NULL CONSTRAINT [DF__wp_yoast___creat__0E591826] DEFAULT (NULL),
-[updated_at] [datetime] NOT NULL CONSTRAINT [DF__wp_yoast___updat__0F4D3C5F] DEFAULT (getdate()),
-[blog_id] [bigint] NOT NULL CONSTRAINT [DF__wp_yoast___blog___10416098] DEFAULT ((1))
+[created_at] [datetime2] (0) NULL CONSTRAINT [DF__wp_yoast___creat__26BAB19C] DEFAULT (NULL),
+[updated_at] [datetime] NOT NULL CONSTRAINT [DF__wp_yoast___updat__27AED5D5] DEFAULT (getdate()),
+[blog_id] [bigint] NOT NULL CONSTRAINT [DF__wp_yoast___blog___28A2FA0E] DEFAULT ((1))
 ) ON [PRIMARY]
 GO
 ALTER TABLE [git].[wp_yoast_primary_term] ADD CONSTRAINT [PK_wp_yoast_primary_term_id] PRIMARY KEY CLUSTERED ([id]) ON [PRIMARY]
