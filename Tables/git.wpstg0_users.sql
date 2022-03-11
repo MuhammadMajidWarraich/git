@@ -1,15 +1,15 @@
 CREATE TABLE [git].[wpstg0_users]
 (
 [ID] [numeric] (20, 0) NOT NULL IDENTITY(2, 1),
-[user_login] [nvarchar] (60) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__user___702996C1] DEFAULT (N''),
-[user_pass] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__user___711DBAFA] DEFAULT (N''),
-[user_nicename] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__user___7211DF33] DEFAULT (N''),
-[user_email] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__user___7306036C] DEFAULT (N''),
-[user_url] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__user___73FA27A5] DEFAULT (N''),
-[user_registered] [datetime2] (0) NOT NULL CONSTRAINT [DF__wpstg0_us__user___74EE4BDE] DEFAULT (getdate()),
-[user_activation_key] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__user___75E27017] DEFAULT (N''),
-[user_status] [int] NOT NULL CONSTRAINT [DF__wpstg0_us__user___76D69450] DEFAULT ((0)),
-[display_name] [nvarchar] (250) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__displ__77CAB889] DEFAULT (N'')
+[user_login] [nvarchar] (60) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__user___7D197D8B] DEFAULT (N''),
+[user_pass] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__user___7E0DA1C4] DEFAULT (N''),
+[user_nicename] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__user___7F01C5FD] DEFAULT (N''),
+[user_email] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__user___7FF5EA36] DEFAULT (N''),
+[user_url] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__user___00EA0E6F] DEFAULT (N''),
+[user_registered] [datetime2] (0) NOT NULL CONSTRAINT [DF__wpstg0_us__user___01DE32A8] DEFAULT (getdate()),
+[user_activation_key] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__user___02D256E1] DEFAULT (N''),
+[user_status] [int] NOT NULL CONSTRAINT [DF__wpstg0_us__user___03C67B1A] DEFAULT ((0)),
+[display_name] [nvarchar] (250) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_us__displ__04BA9F53] DEFAULT (N'')
 ) ON [PRIMARY]
 GO
 ALTER TABLE [git].[wpstg0_users] ADD CONSTRAINT [PK_wpstg0_users_ID] PRIMARY KEY CLUSTERED ([ID]) ON [PRIMARY]
