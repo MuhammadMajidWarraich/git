@@ -1,9 +1,9 @@
 CREATE TABLE [git].[wpstg0_terms]
 (
 [term_id] [numeric] (20, 0) NOT NULL IDENTITY(3, 1),
-[name] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_ter__name__04508AFF] DEFAULT (N''),
-[slug] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_ter__slug__0544AF38] DEFAULT (N''),
-[term_group] [bigint] NOT NULL CONSTRAINT [DF__wpstg0_te__term___0638D371] DEFAULT ((0))
+[name] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_ter__name__160526E6] DEFAULT (N''),
+[slug] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_ter__slug__16F94B1F] DEFAULT (N''),
+[term_group] [bigint] NOT NULL CONSTRAINT [DF__wpstg0_te__term___17ED6F58] DEFAULT ((0))
 ) ON [PRIMARY]
 GO
 ALTER TABLE [git].[wpstg0_terms] ADD CONSTRAINT [PK_wpstg0_terms_term_id] PRIMARY KEY CLUSTERED ([term_id]) ON [PRIMARY]
