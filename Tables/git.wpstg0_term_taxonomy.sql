@@ -1,11 +1,11 @@
 CREATE TABLE [git].[wpstg0_term_taxonomy]
 (
 [term_taxonomy_id] [numeric] (20, 0) NOT NULL IDENTITY(3, 1),
-[term_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wpstg0_te__term___70B3A6A6] DEFAULT ((0)),
-[taxonomy] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_te__taxon__71A7CADF] DEFAULT (N''),
+[term_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wpstg0_te__term___7DA38D70] DEFAULT ((0)),
+[taxonomy] [nvarchar] (32) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_te__taxon__7E97B1A9] DEFAULT (N''),
 [description] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-[parent] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wpstg0_te__paren__729BEF18] DEFAULT ((0)),
-[count] [bigint] NOT NULL CONSTRAINT [DF__wpstg0_te__count__73901351] DEFAULT ((0))
+[parent] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wpstg0_te__paren__7F8BD5E2] DEFAULT ((0)),
+[count] [bigint] NOT NULL CONSTRAINT [DF__wpstg0_te__count__007FFA1B] DEFAULT ((0))
 ) ON [PRIMARY]
 GO
 ALTER TABLE [git].[wpstg0_term_taxonomy] ADD CONSTRAINT [PK_wpstg0_term_taxonomy_term_taxonomy_id] PRIMARY KEY CLUSTERED ([term_taxonomy_id]) ON [PRIMARY]

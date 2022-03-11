@@ -1,9 +1,9 @@
 CREATE TABLE [git].[wpstg0_options]
 (
 [option_id] [numeric] (20, 0) NOT NULL IDENTITY(218, 1),
-[option_name] [nvarchar] (191) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_op__optio__59D0414E] DEFAULT (N''),
+[option_name] [nvarchar] (191) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_op__optio__66C02818] DEFAULT (N''),
 [option_value] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-[autoload] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_op__autol__5AC46587] DEFAULT (N'yes')
+[autoload] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_op__autol__67B44C51] DEFAULT (N'yes')
 ) ON [PRIMARY]
 GO
 ALTER TABLE [git].[wpstg0_options] ADD CONSTRAINT [PK_wpstg0_options_option_id] PRIMARY KEY CLUSTERED ([option_id]) ON [PRIMARY]
