@@ -1,20 +1,20 @@
 CREATE TABLE [git].[wpstg0_comments]
 (
 [comment_ID] [numeric] (20, 0) NOT NULL IDENTITY(2, 1),
-[comment_post_ID] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wpstg0_co__comme__36F11965] DEFAULT ((0)),
+[comment_post_ID] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wpstg0_co__comme__50D0E6F9] DEFAULT ((0)),
 [comment_author] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-[comment_author_email] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_co__comme__37E53D9E] DEFAULT (N''),
-[comment_author_url] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_co__comme__38D961D7] DEFAULT (N''),
-[comment_author_IP] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_co__comme__39CD8610] DEFAULT (N''),
-[comment_date] [datetime2] (0) NOT NULL CONSTRAINT [DF__wpstg0_co__comme__3AC1AA49] DEFAULT (getdate()),
-[comment_date_gmt] [datetime2] (0) NOT NULL CONSTRAINT [DF__wpstg0_co__comme__3BB5CE82] DEFAULT (getdate()),
+[comment_author_email] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_co__comme__51C50B32] DEFAULT (N''),
+[comment_author_url] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_co__comme__52B92F6B] DEFAULT (N''),
+[comment_author_IP] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_co__comme__53AD53A4] DEFAULT (N''),
+[comment_date] [datetime2] (0) NOT NULL CONSTRAINT [DF__wpstg0_co__comme__54A177DD] DEFAULT (getdate()),
+[comment_date_gmt] [datetime2] (0) NOT NULL CONSTRAINT [DF__wpstg0_co__comme__55959C16] DEFAULT (getdate()),
 [comment_content] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-[comment_karma] [int] NOT NULL CONSTRAINT [DF__wpstg0_co__comme__3CA9F2BB] DEFAULT ((0)),
-[comment_approved] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_co__comme__3D9E16F4] DEFAULT (N'1'),
-[comment_agent] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_co__comme__3E923B2D] DEFAULT (N''),
-[comment_type] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_co__comme__3F865F66] DEFAULT (N'comment'),
-[comment_parent] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wpstg0_co__comme__407A839F] DEFAULT ((0)),
-[user_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wpstg0_co__user___416EA7D8] DEFAULT ((0))
+[comment_karma] [int] NOT NULL CONSTRAINT [DF__wpstg0_co__comme__5689C04F] DEFAULT ((0)),
+[comment_approved] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_co__comme__577DE488] DEFAULT (N'1'),
+[comment_agent] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_co__comme__587208C1] DEFAULT (N''),
+[comment_type] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wpstg0_co__comme__59662CFA] DEFAULT (N'comment'),
+[comment_parent] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wpstg0_co__comme__5A5A5133] DEFAULT ((0)),
+[user_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wpstg0_co__user___5B4E756C] DEFAULT ((0))
 ) ON [PRIMARY]
 GO
 ALTER TABLE [git].[wpstg0_comments] ADD CONSTRAINT [PK_wpstg0_comments_comment_ID] PRIMARY KEY CLUSTERED ([comment_ID]) ON [PRIMARY]
