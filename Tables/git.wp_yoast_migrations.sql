@@ -1,7 +1,7 @@
 CREATE TABLE [git].[wp_yoast_migrations]
 (
 [id] [bigint] NOT NULL IDENTITY(24, 1),
-[version] [nvarchar] (191) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_yoast___versi__4F72AE6C] DEFAULT (NULL)
+[version] [nvarchar] (191) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_yoast___versi__410F807C] DEFAULT (NULL)
 ) ON [PRIMARY]
 GO
 ALTER TABLE [git].[wp_yoast_migrations] ADD CONSTRAINT [PK_wp_yoast_migrations_id] PRIMARY KEY CLUSTERED ([id]) ON [PRIMARY]

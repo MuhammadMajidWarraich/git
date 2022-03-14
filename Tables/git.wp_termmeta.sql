@@ -1,9 +1,9 @@
 CREATE TABLE [git].[wp_termmeta]
 (
 [meta_id] [numeric] (20, 0) NOT NULL IDENTITY(1, 1),
-[term_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wp_termme__term___0CB0C6D6] DEFAULT ((0)),
-[meta_key] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_termme__meta___0DA4EB0F] DEFAULT (NULL),
-[meta_value] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_termme__meta___0E990F48] DEFAULT (NULL)
+[term_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wp_termme__term___7E4D98E6] DEFAULT ((0)),
+[meta_key] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_termme__meta___7F41BD1F] DEFAULT (NULL),
+[meta_value] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_termme__meta___0035E158] DEFAULT (NULL)
 ) ON [PRIMARY]
 GO
 ALTER TABLE [git].[wp_termmeta] ADD CONSTRAINT [PK_wp_termmeta_meta_id] PRIMARY KEY CLUSTERED ([meta_id]) ON [PRIMARY]
