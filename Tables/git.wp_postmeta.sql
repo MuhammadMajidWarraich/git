@@ -1,9 +1,9 @@
 CREATE TABLE [git].[wp_postmeta]
 (
 [meta_id] [numeric] (20, 0) NOT NULL IDENTITY(32, 1),
-[post_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wp_postme__post___6581EB1C] DEFAULT ((0)),
-[meta_key] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_postme__meta___66760F55] DEFAULT (NULL),
-[meta_value] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_postme__meta___676A338E] DEFAULT (NULL)
+[post_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wp_postme__post___6CB8F890] DEFAULT ((0)),
+[meta_key] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_postme__meta___6DAD1CC9] DEFAULT (NULL),
+[meta_value] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_postme__meta___6EA14102] DEFAULT (NULL)
 ) ON [PRIMARY]
 GO
 ALTER TABLE [git].[wp_postmeta] ADD CONSTRAINT [PK_wp_postmeta_meta_id] PRIMARY KEY CLUSTERED ([meta_id]) ON [PRIMARY]
