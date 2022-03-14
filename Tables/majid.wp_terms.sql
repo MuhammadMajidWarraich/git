@@ -1,9 +1,9 @@
 CREATE TABLE [majid].[wp_terms]
 (
 [term_id] [numeric] (20, 0) NOT NULL IDENTITY(3, 1),
-[name] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wp_terms__name__4AD81681] DEFAULT (N''),
-[slug] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wp_terms__slug__4BCC3ABA] DEFAULT (N''),
-[term_group] [bigint] NOT NULL CONSTRAINT [DF__wp_terms__term_g__4CC05EF3] DEFAULT ((0))
+[name] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wp_terms__name__743A1EC7] DEFAULT (N''),
+[slug] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__wp_terms__slug__752E4300] DEFAULT (N''),
+[term_group] [bigint] NOT NULL CONSTRAINT [DF__wp_terms__term_g__76226739] DEFAULT ((0))
 ) ON [PRIMARY]
 GO
 ALTER TABLE [majid].[wp_terms] ADD CONSTRAINT [PK_wp_terms_term_id] PRIMARY KEY CLUSTERED ([term_id]) ON [PRIMARY]

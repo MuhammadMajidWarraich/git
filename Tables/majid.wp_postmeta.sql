@@ -1,9 +1,9 @@
 CREATE TABLE [majid].[wp_postmeta]
 (
-[meta_id] [numeric] (20, 0) NOT NULL IDENTITY(4, 1),
-[post_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wp_postme__post___2F2FFC0C] DEFAULT ((0)),
-[meta_key] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_postme__meta___30242045] DEFAULT (NULL),
-[meta_value] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_postme__meta___3118447E] DEFAULT (NULL)
+[meta_id] [numeric] (20, 0) NOT NULL IDENTITY(32, 1),
+[post_id] [numeric] (20, 0) NOT NULL CONSTRAINT [DF__wp_postme__post___58920452] DEFAULT ((0)),
+[meta_key] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_postme__meta___5986288B] DEFAULT (NULL),
+[meta_value] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL CONSTRAINT [DF__wp_postme__meta___5A7A4CC4] DEFAULT (NULL)
 ) ON [PRIMARY]
 GO
 ALTER TABLE [majid].[wp_postmeta] ADD CONSTRAINT [PK_wp_postmeta_meta_id] PRIMARY KEY CLUSTERED ([meta_id]) ON [PRIMARY]
